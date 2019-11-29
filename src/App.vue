@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-content>
+    <v-content class="ma-xs-1 ma-md-2 ma-lg-4">
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -18,3 +18,20 @@ export default Vue.extend({
   })
 })
 </script>
+
+<style>
+  .primary-btn{
+    border: 0.5px solid  #2962FF;
+    background-color: #333333;
+  }
+  .primary-txt {
+    color: #2962FF;
+  }
+  .secondary-btn{
+    border: 1px solid  #FDD835;
+    background-color: #333333;
+  }
+  .secondary-txt {
+    color: #FDD835;
+  }
+</style>
